@@ -8,21 +8,21 @@ const Footer: React.FC = () => {
       copyright={`${currentYear} ${defaultMessage}`}
       links={[
         {
-          key: 'Ant Design Pro',
-          title: 'Ant Design Pro',
-          href: 'https://pro.ant.design',
+          key: 'shanbei-user-front',
+          title: 'shanbei-user-front',
+          href: 'https://github.com/zhengqingquan/shanbei-user-front',
           blankTarget: true,
         },
         {
           key: 'github',
           title: <GithubOutlined />,
-          href: 'https://github.com/ant-design/ant-design-pro',
+          href: 'https://github.com/zhengqingquan',
           blankTarget: true,
         },
         {
-          key: 'Ant Design',
-          title: 'Ant Design',
-          href: 'https://ant.design',
+          key: 'shanbei-user',
+          title: 'shanbei-user',
+          href: 'https://github.com/zhengqingquan/shanbei-user',
           blankTarget: true,
         },
       ]}
