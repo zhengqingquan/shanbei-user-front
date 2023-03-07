@@ -19,7 +19,7 @@ const NO_NEED_LOGIN_WHITE_List = ['/user/register', loginPath]
 export const request: RequestConfig = {
   // prefix :'http://localhost:8080/api',
   // prefix :'/api',
-  timeout: 10000, // 10秒
+  timeout: 1000000, // 10秒
 };
 
 
