@@ -37,6 +37,12 @@ export default [
         component: './Welcome',
       },
       {
+        path: '/admin/user-manage',
+        name: '用户管理',
+        icon: 'smile',
+        component: './Admin/UserManage',
+      },
+      {
         component: './404',
       },
     ],
