@@ -1,7 +1,12 @@
 import { GithubOutlined } from '@ant-design/icons';
 import { DefaultFooter } from '@ant-design/pro-components';
+import React from "react";
+
 const Footer: React.FC = () => {
-  const defaultMessage = '蚂蚁集团体验技术部出品';
+
+  const defaultMessage = '扇贝制造，必属劣品';
+
+  // 获取当前年份
   const currentYear = new Date().getFullYear();
   return (
     <DefaultFooter

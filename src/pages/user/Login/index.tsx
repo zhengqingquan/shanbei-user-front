@@ -46,6 +46,8 @@ const Login: React.FC = () => {
       }));
     }
   };
+
+  // 表单提交
   const handleSubmit = async (values: API.LoginParams) => {
     try {
       // 登录
@@ -54,9 +56,14 @@ const Login: React.FC = () => {
         type,
       });
       if (user) {
+
+        // 显示登录成功的标语
         const defaultLoginSuccessMessage = '登录成功！';
         message.success(defaultLoginSuccessMessage);
+
+        //
         await fetchUserInfo();
+
         /** 此方法会跳转到 redirect 参数所在的位置 */
         if (!history) return;
         const {query} = history.location;
@@ -66,7 +73,6 @@ const Login: React.FC = () => {
         history.push(redirect || '/');
         return;
       }
-      // console.log(msg);
       // 如果失败去设置用户错误信息
       setUserLoginState(user);
     } catch (error) {
@@ -74,6 +80,7 @@ const Login: React.FC = () => {
       message.error(defaultLoginFailureMessage);
     }
   };
+
   const {status, type: loginType} = userLoginState;
   return (
     <div className={styles.container}>
@@ -102,7 +109,7 @@ const Login: React.FC = () => {
           </Tabs>
 
           {status === 'error' && loginType === 'account' && (
-            <LoginMessage content={'错误的用户名和密码(admin/ant.design)'}/>
+            <LoginMessage content={'错误的用户名和密码(shanbei/12345678)'}/>
           )}
 
           {/*使用账号密码登录*/}
