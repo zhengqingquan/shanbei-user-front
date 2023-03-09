@@ -43,6 +43,36 @@ export default [
         component: './Admin/UserManage',
       },
       {
+        path: '/admin/dept-manage',
+        name: '部门管理',
+        icon: 'smile',
+        component: './Admin/DeptManage',
+      },
+      {
+        path: '/admin/role-manage',
+        name: '角色管理',
+        icon: 'smile',
+        component: './Admin/RoleManage',
+      },
+      {
+        path: '/admin/post-manage',
+        name: '岗位管理',
+        icon: 'smile',
+        component: './Admin/PostManage',
+      },
+      {
+        path: '/admin/log/operlog',
+        name: '操作日志',
+        icon: 'smile',
+        component: './Admin/LogManage/OperLogManage',
+      },
+      {
+        path: '/admin/log/logininfor',
+        name: '登录日志',
+        icon: 'smile',
+        component: './Admin/LogManage/LoginLogManage',
+      },
+      {
         component: './404',
       },
     ],
@@ -62,6 +92,12 @@ export default [
     icon: 'smile',
     path: '/gobang',
     component: './Gobang',
+  },
+  {
+    name: '网站',
+    icon: 'smile',
+    path: '/website',
+    component: './Website',
   },
   {
     component: './404',
