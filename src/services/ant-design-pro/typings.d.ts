@@ -2,17 +2,30 @@
 /* eslint-disable */
 
 declare namespace API {
+
+  /**
+   * 定义一个通用的返回对象
+   * 用于对接后端的返回类
+   */
+  type BaseResponse<T> = {
+    code: number,
+    data: T,
+    message: string,
+    description: string
+  }
+
+
   type CurrentUser = {
-    id:number;
-    username:string;
-    userAccount:string;
-    avatarUrl?:string;
-    gender:number;
+    id: number;
+    username: string;
+    userAccount: string;
+    avatarUrl?: string;
+    gender: number;
     phone: string;
-    email:string;
-    userState:number;
-    createTime:Date;
-    userRole:number;
+    email: string;
+    userState: number;
+    createTime: Date;
+    userRole: number;
 
     // 下面是以前的旧代码。
     // name?: string;
@@ -41,7 +54,7 @@ declare namespace API {
     currentAuthority?: string;
   };
 
-  type RegisterResult =number;
+  type RegisterResult = number;
 
   type PageParams = {
     current?: number;
@@ -85,7 +98,7 @@ declare namespace API {
   type RegisterParams = {
     userAccount?: string;
     userPassword?: string;
-    checkPassword?:string;
+    checkPassword?: string;
     type?: string;
   };
 
