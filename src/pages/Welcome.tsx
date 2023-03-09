@@ -2,6 +2,8 @@ import { PageContainer } from '@ant-design/pro-components';
 import { Alert, Card, Typography } from 'antd';
 import React from 'react';
 import styles from './Welcome.less';
+import CarouselBasic from './CarouselBasic';
+
 const CodePreview: React.FC = ({ children }) => (
   <pre className={styles.pre}>
     <code>
@@ -9,9 +11,11 @@ const CodePreview: React.FC = ({ children }) => (
     </code>
   </pre>
 );
+
 const Welcome: React.FC = () => {
   return (
     <PageContainer>
+      <CarouselBasic />
       <Card>
         <Alert
           message={'更快更强的重型组件，已经发布。'}
@@ -37,4 +41,5 @@ const Welcome: React.FC = () => {
     </PageContainer>
   );
 };
+
 export default Welcome;

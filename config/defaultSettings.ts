@@ -12,9 +12,12 @@ const Settings: LayoutSettings & {
   fixedHeader: false,
   fixSiderbar: true,
   colorWeak: false,
-  title: 'Ant Design Pro',
+  // 界面左上角的文字
+  title: '「白日梦橙 梦境花开」',
   pwa: false,
-  logo: 'https://gw.alipayobjects.com/zos/rmsportal/KDpgvguMpGfqaHPjicRK.svg',
+  // 界面左上角的logo
+  // logo: 'https://gw.alipayobjects.com/zos/rmsportal/KDpgvguMpGfqaHPjicRK.svg',
+  logo: 'https://avatars.githubusercontent.com/u/55186872?v=4',
   iconfontUrl: '',
 };
 

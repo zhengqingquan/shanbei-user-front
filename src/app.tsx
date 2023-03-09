@@ -6,7 +6,7 @@ import {PageLoading, SettingDrawer} from '@ant-design/pro-components';
 import type {RunTimeLayoutConfig} from 'umi';
 import {history, Link} from 'umi';
 import defaultSettings from '../config/defaultSettings';
-import {currentUser as queryCurrentUser} from './services/ant-design-pro/api';
+import {currentUser} from './services/ant-design-pro/api';
 import type {RequestConfig} from "@@/plugin-request/request";
 
 const isDev = process.env.NODE_ENV === 'development';
@@ -30,7 +30,7 @@ export const initialStateConfig = {
 
 const fetchUserInfo = async () => {
   try {
-    return await queryCurrentUser();
+    return await currentUser();
   } catch (error) {
     // 如果出现报错，这里会忘history对象去push一个loginPath页面。
     // history.push(loginPath);
